@@ -1,4 +1,4 @@
-package com.example.bookstore;
+package com.example.bookstore.controller;
 
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.bind.annotation.PostMapping;
