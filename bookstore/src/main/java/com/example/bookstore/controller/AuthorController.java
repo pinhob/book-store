@@ -2,6 +2,7 @@ package com.example.bookstore.controller;
 
 import org.springframework.web.bind.annotation.RestController;
 
+import com.example.bookstore.dto.AuthorDTO;
 import com.example.bookstore.service.AuthorService;
 
 import org.springframework.web.bind.annotation.PostMapping;
@@ -22,8 +23,7 @@ public class AuthorController {
     }
     
     @PostMapping("/author")
-    public String createAuthor(@RequestBody String author) {
+    public AuthorDTO createAuthor(@RequestBody AuthorDTO author) {
         return service.createAuthor(author);
     }
-        
 }
